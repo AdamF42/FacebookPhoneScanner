@@ -40,7 +40,7 @@ def controllaConnessione():
 #Controllo se Facebook e' on
 controllaConnessione()
 #Chiedo la modalita' di scansione (range, file o numero parziale)
-mode = input("\n\nScegli la modalita':\n1. Range\n2. Da file\n3. Conoscendo una parte del numero\nScelta: ")
+mode = input("\n\nScegli la modalita':\n1. Range\n2. Da file\nScelta: ")
 if mode == 1:
 	threads = input("\nThread: ")
 	startn	= input("Numero di partenza: ")

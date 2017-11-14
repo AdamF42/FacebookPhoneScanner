@@ -21,7 +21,7 @@ opener.addheaders.append(('User-Agent', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64
 def fbCheck(numero):
 	response = opener.open("https://m.facebook.com/search/top/?q=%d" % numero)
 	page_source = str(response.read())	
-	nome = re.compile("<td class=\"bk\"><a[^<]*>([^<]+)").findall(page_source)
+	nome = re.compile("<td class=\"bl\"><a[^<]*>([^<]+)").findall(page_source)
 	if len(nome)>0:
 		sys.stdout.write(str(numero)+" = "+str(nome[0])+"\n")
 		with open("lista.txt", "a") as myfile:
